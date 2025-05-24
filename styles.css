@@ -184,3 +184,16 @@ em {
   position: relative;
   z-index: 1;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px dashed #ffd6e0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.footer p {
+  margin: 0;
+}
