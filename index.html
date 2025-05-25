@@ -25,43 +25,109 @@
         </div>
       </div>
       <div class="right-side">
-        <div class="brand">MISHAL ANAS & NIHAL ANAS</div>
+        <div class="brand">MISHAL & NIHAL</div>
       </div>
     </nav>
 
     <div class="container">
       <div class="content-wrapper">
         <div class="two-column-wrapper">
-          <div class="profile-image-wrapper">
-            <img src="images/kids-profile.png" alt="" />
-          </div>
-          <div class="profile-content-wrapper">
+          <div
+            class="profile-content-wrapper"
+            style="margin: 0 auto; max-width: 700px"
+          >
             <h1>Hi, Thanks for visiting our site.</h1>
             <hr />
-            <h3 class="mishal-header">Mishal Anas</h3>
-            <p>
-              I was born on 🎂 April 22, 2013. I am a 6th standard student in
-              Sree Narayana Higher Secondary School. I love cars 🏎️ and watching
-              cartoons 📺.
-            </p>
+            <div
+              class="mishal-profile-row"
+              style="
+                display: flex;
+                align-items: flex-start;
+                gap: 24px;
+                margin-bottom: 16px;
+              "
+            >
+              <img
+                src="images/Mishal_Porfile_v2.JPG"
+                alt="Mishal Anas Profile Picture"
+                class="profile-pic"
+                style="
+                  max-width: 180px;
+                  border-radius: 12px;
+                  margin-bottom: 0;
+                  box-shadow: 0 2px 8px #0001;
+                "
+              />
+              <div>
+                <h3 class="mishal-header" style="margin-top: 0">Mishal Anas</h3>
+                <p>
+                  I was born on April 22, 2013 (<span id="mishal-age"></span>
+                  years old). I am a 6<sup>th</sup> standard student in Sree
+                  Narayana Higher Secondary School. My favorite hobby is
+                  exploring different types of cars and learning about their
+                  features. I also enjoy spending my free time watching
+                  entertaining cartoons and animated shows. I aspire to become
+                  an automobile engineer in the future and design innovative
+                  vehicles that can make a difference.
+                </p>
+              </div>
+            </div>
+            <script>
+              const mishalBirthDate = new Date("2013-04-22");
+              const mishalAge =
+                new Date().getFullYear() - mishalBirthDate.getFullYear();
+              document.getElementById("mishal-age").textContent = mishalAge;
+            </script>
             <hr />
-            <h3 class="nihal-header">Nihal Anas</h3>
-            <p>
-              I was born on 🎂 July 31, 2015. I am a 5th standard student in
-              Anita Public School. I love cars 🚗 and playing games 🎮.
-            </p>
+            <div
+              class="nihal-profile-row"
+              style="
+                display: flex;
+                align-items: flex-start;
+                gap: 24px;
+                margin-bottom: 16px;
+              "
+            >
+              <img
+                src="images/Nihal_Profile_v2.jpg"
+                alt="Nihal Anas Profile Picture"
+                class="profile-pic"
+                style="
+                  max-width: 180px;
+                  border-radius: 12px;
+                  margin-bottom: 0;
+                  box-shadow: 0 2px 8px #0001;
+                "
+              />
+              <div>
+                <h3 class="nihal-header" style="margin-top: 0">Nihal Anas</h3>
+                <p>
+                  I was born on July 31, 2015 (<span id="nihal-age"></span>
+                  years old). I am a 5<sup>th</sup> standard student in Anita
+                  Public School. I have a deep interest in cars and love
+                  discovering new models and their designs. Additionally, I
+                  enjoy playing various video games, which help me relax and
+                  have fun after school. I dream of creating my own video game
+                  one day, combining my love for technology and creativity.
+                </p>
+              </div>
+            </div>
+            <script>
+              const nihalBirthDate = new Date("2015-07-31");
+              const nihalAge =
+                new Date().getFullYear() - nihalBirthDate.getFullYear();
+              document.getElementById("nihal-age").textContent = nihalAge;
+            </script>
             <hr />
             <p>
-              <em>
-                Click on the Albums menu to view few of our cool pics 😍😍😍
-              </em>
+              <em> Click on the Top menu to view few of our cool pics </em>
             </p>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <p>&copy; 2025 Mishal & Nihal Anas. All rights reserved.</p>
+      <p>&copy; 2025 Mishal & Nihal. All rights reserved.</p>
     </footer>
   </body>
 </html>
