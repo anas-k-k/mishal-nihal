@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Games (a.k.a. Nihal's Masterpieces 😄)</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .game-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 32px;
+      }
+      .game-cell {
+        flex: 1 1 320px;
+        max-width: 33%;
+        min-width: 320px;
+        box-sizing: border-box;
+      }
+      @media (max-width: 1000px) {
+        .game-cell {
+          max-width: 48%;
+        }
+      }
+      @media (max-width: 700px) {
+        .game-cell {
+          max-width: 100%;
+          min-width: 0;
+        }
+      }
+      .game-cell iframe {
+        width: 100%;
+        min-width: 0;
+        border-radius: 12px;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="albums.html">Family Photos</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="album2.html">Fun Events</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="videos.html">Videos</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="games.html">Games</a>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="brand">MISHAL & NIHAL</div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="content-wrapper" style="text-align: center">
+        <h2 style="margin: 32px 0 12px 0">
+          Games (a.k.a. Nihal's Masterpieces 😄)
+        </h2>
+        <div
+          style="
+            font-size: 1.2rem;
+            color: #fff;
+            background: #4a90e2;
+            display: inline-block;
+            padding: 8px 24px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px #0002;
+            letter-spacing: 1px;
+          "
+        >
+          Total Games: <span id="gameCount"></span>
+        </div>
+        <div class="game-grid">
+          <div class="game-cell" style="position: relative">
+            <iframe
+              id="gameIframe"
+              src="https://scratch.mit.edu/projects/1182202261/embed"
+              allowtransparency="true"
+              width="485"
+              height="402"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+              style="border-radius: 12px"
+            ></iframe>
+            <button
+              id="fullscreenGameBtn"
+              title="View Fullscreen"
+              style="
+                position: absolute;
+                bottom: 18px;
+                right: 18px;
+                background: rgba(0, 0, 0, 0.7);
+                border: none;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 2px 8px #0002;
+                z-index: 2;
+                padding: 0;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="#fff"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 3H5c-1.1 0-2 .9-2 2v4a1 1 0 1 0 2 0V5h4a1 1 0 1 0 0-2zm6 0a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0V5c0-1.1-.9-2-2-2h-4zm5 14a1 1 0 1 0-2 0v4h-4a1 1 0 1 0 0 2h4c1.1 0 2-.9 2-2v-4zm-16 0a1 1 0 1 0-2 0v4c0 1.1.9 2 2 2h4a1 1 0 1 0 0-2H5v-4z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="game-cell" style="position: relative">
+            <iframe
+              id="gameIframe2"
+              src="https://scratch.mit.edu/projects/1182289726/embed"
+              allowtransparency="true"
+              width="485"
+              height="402"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+              style="border-radius: 12px"
+            ></iframe>
+            <button
+              id="fullscreenGameBtn2"
+              title="View Fullscreen"
+              style="
+                position: absolute;
+                bottom: 18px;
+                right: 18px;
+                background: rgba(0, 0, 0, 0.7);
+                border: none;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 2px 8px #0002;
+                z-index: 2;
+                padding: 0;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="#fff"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 3H5c-1.1 0-2 .9-2 2v4a1 1 0 1 0 2 0V5h4a1 1 0 1 0 0-2zm6 0a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0V5c0-1.1-.9-2-2-2h-4zm5 14a1 1 0 1 0-2 0v4h-4a1 1 0 1 0 0 2h4c1.1 0 2-.9 2-2v-4zm-16 0a1 1 0 1 0-2 0v4c0 1.1.9 2 2 2h4a1 1 0 1 0 0-2H5v-4z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="game-cell" style="position: relative">
+            <iframe
+              id="gameIframe3"
+              src="https://scratch.mit.edu/projects/1182290568/embed"
+              allowtransparency="true"
+              width="485"
+              height="402"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+              style="border-radius: 12px"
+            ></iframe>
+            <button
+              id="fullscreenGameBtn3"
+              title="View Fullscreen"
+              style="
+                position: absolute;
+                bottom: 18px;
+                right: 18px;
+                background: rgba(0, 0, 0, 0.7);
+                border: none;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 2px 8px #0002;
+                z-index: 2;
+                padding: 0;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="#fff"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 3H5c-1.1 0-2 .9-2 2v4a1 1 0 1 0 2 0V5h4a1 1 0 1 0 0-2zm6 0a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0V5c0-1.1-.9-2-2-2h-4zm5 14a1 1 0 1 0-2 0v4h-4a1 1 0 1 0 0 2h4c1.1 0 2-.9 2-2v-4zm-16 0a1 1 0 1 0-2 0v4c0 1.1.9 2 2 2h4a1 1 0 1 0 0-2H5v-4z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="game-cell" style="position: relative">
+            <iframe
+              id="gameIframe4"
+              src="https://scratch.mit.edu/projects/1182291198/embed"
+              allowtransparency="true"
+              width="485"
+              height="402"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+              style="border-radius: 12px"
+            ></iframe>
+            <button
+              id="fullscreenGameBtn4"
+              title="View Fullscreen"
+              style="
+                position: absolute;
+                bottom: 18px;
+                right: 18px;
+                background: rgba(0, 0, 0, 0.7);
+                border: none;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 2px 8px #0002;
+                z-index: 2;
+                padding: 0;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="#fff"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 3H5c-1.1 0-2 .9-2 2v4a1 1 0 1 0 2 0V5h4a1 1 0 1 0 0-2zm6 0a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0V5c0-1.1-.9-2-2-2h-4zm5 14a1 1 0 1 0-2 0v4h-4a1 1 0 1 0 0 2h4c1.1 0 2-.9 2-2v-4zm-16 0a1 1 0 1 0-2 0v4c0 1.1.9 2 2 2h4a1 1 0 1 0 0-2H5v-4z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var count = document.querySelectorAll(".game-grid iframe").length;
+            document.getElementById("gameCount").textContent = count;
+            document.getElementById("fullscreenGameBtn").onclick = function () {
+              var iframe = document.getElementById("gameIframe");
+              if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+              } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+              } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+              }
+            };
+            document.getElementById("fullscreenGameBtn2").onclick =
+              function () {
+                var iframe = document.getElementById("gameIframe2");
+                if (iframe.requestFullscreen) {
+                  iframe.requestFullscreen();
+                } else if (iframe.webkitRequestFullscreen) {
+                  iframe.webkitRequestFullscreen();
+                } else if (iframe.msRequestFullscreen) {
+                  iframe.msRequestFullscreen();
+                }
+              };
+            document.getElementById("fullscreenGameBtn3").onclick =
+              function () {
+                var iframe = document.getElementById("gameIframe3");
+                if (iframe.requestFullscreen) {
+                  iframe.requestFullscreen();
+                } else if (iframe.webkitRequestFullscreen) {
+                  iframe.webkitRequestFullscreen();
+                } else if (iframe.msRequestFullscreen) {
+                  iframe.msRequestFullscreen();
+                }
+              };
+            document.getElementById("fullscreenGameBtn4").onclick =
+              function () {
+                var iframe = document.getElementById("gameIframe4");
+                if (iframe.requestFullscreen) {
+                  iframe.requestFullscreen();
+                } else if (iframe.webkitRequestFullscreen) {
+                  iframe.webkitRequestFullscreen();
+                } else if (iframe.msRequestFullscreen) {
+                  iframe.msRequestFullscreen();
+                }
+              };
+          });
+        </script>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2025 Mishal & Nihal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
